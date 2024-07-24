@@ -1,4 +1,4 @@
-# <p align="center"> Javascript chatbot example </p>
+# <p align="center"> Javascript chatbot plugin example </p>
 
 <p> Itegrated Chat GPT and General Machine learning model </p>
 
