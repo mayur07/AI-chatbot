@@ -42,6 +42,7 @@ user_query = "I want to be a billionaire"
 response = chatbot_response(user_query)
 print(response)
 
+
 ![Alt text](./images/pic.gif?raw=true "Title")
 
 
