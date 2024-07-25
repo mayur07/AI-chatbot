@@ -22,6 +22,8 @@ You can run your file in http-server.
 <p>X-Bot integrated with NLP techniques to understand and process user queries and uses spaCy, NLTK and pre-trained model BERT</p>
 <p>It has capabilities of filtering mechanism to restrict responses to domain-specific queries. If a query falls outside the domain, X-chatbot can respond with a cutomizable message like, “I’m sorry, I can only assist with healthcare-related questions. X-Bot is Continuously train and customize based on user interactions to improve accuracy and relevance.</p>
 
+![Alt text](./images/pic.gif?raw=true "Title")
+
 <b>Sample Code:</b>
 ```python
 def is_domain_specific(query):
@@ -43,7 +45,7 @@ response = chatbot_response(user_query)
 print(response)
 
 
-![Alt text](./images/pic.gif?raw=true "Title")
+
 
 
 
