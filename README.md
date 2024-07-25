@@ -22,6 +22,25 @@ You can run your file in http-server.
 <p>X-Bot integrated with NLP techniques to understand and process user queries and uses spaCy, NLTK and pre-trained model BERT</p>
 <p>It has capabilities of filtering mechanism to restrict responses to domain-specific queries. If a query falls outside the domain, X-chatbot can respond with a cutomizable message like, “I’m sorry, I can only assist with healthcare-related questions. X-Bot is Continuously train and customize based on user interactions to improve accuracy and relevance.</p>
 
+Sample Code:
+def is_domain_specific(query):
+    # Define keywords related to your domain
+    domain_keywords = ["appointment", "insurance", "claim", "doctor", "health"]
+    return any(keyword in query.lower() for keyword in domain_keywords)
+
+def chatbot_response(query):
+    if is_domain_specific(query):
+        # Provide domain-specific response
+        return "Here's the information you requested about healthcare."
+    else:
+        # Provide a generic response for out-of-domain queries
+        return "I'm sorry, I can only assist with healthcare-related questions."
+
+# Example usage
+user_query = "I want to be a billionaire"
+response = chatbot_response(user_query)
+print(response)
+
 ![Alt text](./images/pic.gif?raw=true "Title")
 
 
